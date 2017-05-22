@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+font-family: Helvetica, Arial, sans-serif;
+background-color: white;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* ESTILOS BÁSICOS */
+.container {
+display: block;
+width: 100%;
+max-width: 1100px;
+margin: 0 auto;
+}
+header {
+background-color: #F8F8F8;
+color: #337AB7;
+padding: 1em 0 1.5em;
+text-align: center;
+overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: Helvetica, Arial, sans-serif;
+text-transform: uppercase;
+text-align: center;
+line-height: 110%;
+}
+h1 {
+font-size: 3rem;
+}
+h2 {
+font-size: 2.5rem;
+}
+h3 {
+font-size: 2rem;
+}
+h4 {
+font-size: 1.5rem;
+}
+form {
+width: 100%;
+margin: 1em auto 0;
+max-width: 600px;
+font-size: 85%;
+}
+form div {
+    margin: 0 0 1em;
+}
+label {
+display: block;
+font-weight: 800;
+color: #6730EC;
+margin: 1.2em 0 .5em;
+float: left;
+}
+input, select, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 93%;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    line-height: 120%;
+    padding: 3%;
+    transition: .5s ease all;
+    background: rgba(255,255,255,.9);
+}
+input::placeholder, textarea::placeholder {
+color: #999999;
+}
+textarea {
+    height: 10em;
+}
+a {
+color: #337AB7;
+transition: .5s ease all;
+text-decoration: none;
+}
+a:focus, a:hover, a:active {
+color: #094C83;
+transition: .5s ease all;
+}
+p {
+font-size: .9rem;
+font-family: Helvetica, Arial, sans-serif;
+display: block;
+margin: 1em 0;
+line-height: 1.4;
+text-align: center;
+}
+u {
+    border-bottom: 1px dotted;
+    text-decoration-style: dotted;
+}
+b {
+font-weight: 700;
+}
+small {
+font-size: .8rem;
+}
+address {
+    margin: 2em 0;
+}
+address > * {
+    display: block;
+    font-size: 90%;
+    margin: 0 0 .5em;
+}
+footer {
+display: block;
+text-align: left;
+width: 100%;
+margin: 5em 0 0;
+padding: 2em 0;
+overflow: hidden;
+background-color: #61A3D0;
+color: white;
+}
+/*INPUT CHECK*/
+input[type|=check] {
+display: inline-block;
+width: auto;
+}
+label[for|=check] {
+font-family: Helvetica, Arial, sans-serif;
+font-weight: normal;
+display: inline-block;
+}
+/* INPUT NUMBER SIN FLECHAS */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+.lead {
+max-width: 660px;
+margin: 2em auto 1em;
+font-size: 120%;
+}
+.btn {
+display: inline-block;
+text-align: center;
+cursor: pointer;
+background-color: #337AB7;
+color: white;
+font-size: 90%;
+padding: .7em;
+transition: .5s ease all;
+margin: .5em auto 1em;
+border: 1px solid #1266AB;
+border-radius: 3px;
+}
+.btn:hover, .btn:active, .btn:focus {
+background-color: #094C83;
+transition: .5s ease all;
+color: #fff;
+}
+.aleft {
+float: left;
+}
+.aright {
+float: right;
+}
+/* Especial */
+.logo {
+color: #777777;
+}
+header .logo {
+text-align: left;
+float: left;
+}
+header nav {
+float: right;
+}
+header nav ul li {
+display: inline-block;
+margin: 0 1em;
+font-size: 90%;
+}
+.imagen {
+float: left;
+width: 50%;
+display: block;
+overflow: hidden;
+}
+.imagen img {
+width: 100%;
+height: auto;
+display: block;
+}
+.texto {
+float: left;
+width: 50%;
+padding: 2em 0 0 2em;
+}
+.texto p {
+text-align: left;
+}
+#hero {
+background-image: url('../img/home.jpg');
+background-repeat: no-repeat;
+background-position: top;
+overflow: hidden;
+background-size: 100%;
+text-align: center;
+height: 55vh;
+}
+#hero .container {
+margin: 17.5vh auto;
+display: block;
+height: 20vh;
+}
+#hero h2 {
+color: white;
+}
+#hackathon {
+background-color: #F1E308;
+overflow: hidden;
+margin: 4em 0;
+padding: 5em 0;
+}
+#hackathon h3 {
+font-size: 1.5rem;
+}
+#contacto {
+margin: 0 0 3em;
+overflow: hidden;
+}
+#contacto .imagen {
+width: 65%;
+}
+#contacto .texto {
+width: 35%;
+}
+footer span {
+color: #F1E308;
+}
