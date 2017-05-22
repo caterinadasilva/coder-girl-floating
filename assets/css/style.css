@@ -225,6 +225,9 @@ width: 50%;
 display: block;
 overflow: hidden;
 }
+.imagen.aright {
+float: right;
+}
 .imagen img {
 width: 100%;
 height: auto;
